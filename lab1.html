@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Farmerman Bill's</title>
+
+
+
+    <style>
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.navbar-custom {
+    background-color: #8abe5b;
+}
+
+.sidebar__nav li.active,
+  .sidebar__nav li:hover {
+      background-color: #F7F2FF;
+      color: #995BED;
+  }
+  
+  
+.sidenav {
+  position: flex;
+  z-index: 1;
+  left: 0;
+  background-color: #252525;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.main {
+  text-align: left;
+  background: rgba(255, 136, 0, 0.288);
+  
+  
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: #252525;
+}
+
+
+
+@media all and (min-width: 800px) {
+	
+
+  .aside   { flex: 1 0 0; }
+  .sidenav { flex: 1 0 0; }
+  
+  .main    { flex: 3 0px; }
+  .sidenav { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+
+}
+
+#profile > img {
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 300px;
+            padding: 1px;
+            border-radius: 50%;
+            padding-right: 20px;
+        }
+
+        #profile_specstitle {
+            padding-top: 100px;
+            padding-right: 5px;
+            position:flex;
+            top:300px;
+           
+        }
+
+        #profile_specs {
+            position: flex;  
+            top:330px;
+           
+        }
+      
+
+        #egg_image{
+            border-radius: 10%;
+        }
+
+      
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-light navbar-custom">
+            <a class="navbar-brand">
+              <img src="https://stnorbertfarmersmarket.ca/wp-content/themes/stnorbert2013/images/logo.png" height="80" width="80" alt="" />
+             <span class="text-light">Farmerman Bill's</span> 
+            </a>
+          </nav>
+        <article class="main">
+        
+        
+        <!--PRICING-->
+                  <div class="container mx-auto">
+                       <!--PAGE CENTER TEXT-->
+          <p>Here at farmerman Bill's farm, we pride ourselves on only offering the very best off
+            eggs! We offer: chicken eggs, duck eggs and finally ostrich eggs. All our animals freerange on our big
+            farm here in Texas.</p>  
+                      <div class="row">
+                          <div class="col">
+                              <img id="egg_image" src="http://organicacres.ca/wp-content/uploads/2019/08/Eggs-300x300.jpeg" />
+      
+                              <p class="font-weight-bold font-italic ">Chicken eggs:</p>
+                              <p class="font-weight-light "><del>5 pack: $1 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-light ">10 pack: $1.5</p>
+                              <p class="font-weight-light ">15 pack: $2</p>
+                              <p class="font-weight-light "><del>20 pack: $2.5 &nbsp;</del><span
+                                      class="font-weight-bold text-success"> Now on sale for $2.2</span></p>
+                          </div>
+      
+                          <div class="col">
+                              <img id="egg_image"
+                                  src="http://blessingagro.com/wp-content/uploads/2020/07/blown-duck-eggs-1_02_resize_29-300x300.jpg" />
+                              <p class="font-weight-bold font-italic ">Duck eggs:</p>
+                              <p class="font-weight-light">5 pack: $3 </p>
+                              <p class="font-weight-light">10 pack: $8 </p>
+                              <p class="font-weight-light">15 pack: $11 </p>
+                              <p class="font-weight-light">20 pack: $16 </p>
+      
+                          </div>
+      
+                          <div class="col">
+                              <img id="egg_image" src="https://s.alicdn.com/@sc04/kf/U4de4ef08edee48f4b4b122ddb60dfd99a.jpg_300x300.jpg"  />
+                              <p class="font-weight-bold font-italic ">Ostrich eggs:</p>
+                              <p class="font-weight-light "><del>1 egg: $5 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-light "><del>2 eggs: $8 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-light "><del>3 eggs: $12 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-light "><del>4 eggs: $16 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-light "><del>5 eggs: $18 &nbsp;</del><span class="font-weight-bold">SOLD
+                                      OUT</span> </p>
+                              <p class="font-weight-bold text-danger">All Ostrich eggs are currently sold out!</p>
+                              
+                            </div>	
+                           
+        </article>
+        <!--SIDE MENU-->
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+<!--PROFILE-->
+        <aside class="aside aside-2">
+            
+            <div id="profile">
+                <img src="http://pm1.narvii.com/6589/dc9ae97ce57d3597c0a11d958b85b8aabc2dcfc1_00.jpg" />
+                <h3 class="text-light">Farmerman Bill.</h3>
+            </div>
+            <div id="profile_specstitle">
+                <p><strong class="text-light">Things I'm good at:</strong></p>
+            </div>
+            <div id="profile_specs">
+                <ul class="text-light">
+                    <li>Raising Livestock.</li>
+                    <li>Incubating eggs.</li>
+                    <li>Driving my tractor.</li>
+        
+                </ul>
+            </div>
+        </aside>
+
+        <!--FOOTER-->
+      
+              <footer class="footer mt-auto text-center text-lg-start bg-dark text-light">
+                  <!-- Section: Social media -->
+                  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                      <!-- Left -->
+                      <div class="me-5 d-none d-lg-block">
+                          <span>Get connected with us on social networks:</span>
+                      </div>
+      
+                      <!-- Right -->
+                      <div>
+                          <a href="https://www.facebook.com/" class="me-4 text-reset">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="me-4 text-reset">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="https://www.google.com/" class="me-4 text-reset">
+                              <i class="fab fa-google"></i>
+                          </a>
+                          <a href="https://www.instagram.com/" class="me-4 text-reset">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/" class="me-4 text-reset">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://github.com/Alanomari/Alanomari.github.io" class="me-4 text-reset">
+                              <i class="fab fa-github"></i>
+                          </a>
+                      </div>
+      
+                  </section>
+      
+                  <!-- Section: Links  -->
+                  <section class="">
+                      <div class="container text-center text-md-start mt-5">
+                          <!-- Grid row -->
+                          <div class="row mt-3">
+                              <!-- Grid column -->
+                              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                  <!-- Content -->
+                                  <h6 class="text-uppercase fw-bold mb-4">
+                                      <i class="fas fa-egg me-3"></i>Farmerman Bill's
+                                  </h6>
+                                  <p>
+                                      The freshest eggs organically farmed for the best quality and taste.
+                                  </p>
+                              </div>
+      
+                              <!-- Grid column -->
+                              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                  <!-- Links -->
+                                  <h6 class="text-uppercase fw-bold mb-4">
+                                      Products
+                                  </h6>
+                                  <p>
+                                      <a href="#!" class="text-reset">Chicken eggs</a>
+                                  </p>
+                                  <p>
+                                      <a href="#!" class="text-reset">Duck eggs</a>
+                                  </p>
+                                  <p>
+                                      <a href="#!" class="text-reset">Ostrich eggs</a>
+                                  </p>
+      
+                              </div>
+      
+      
+                              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                  <!-- Links -->
+                                  <h6 class="text-uppercase fw-bold mb-4">
+                                      Contact
+                                  </h6>
+                                  <p><i class="fas fa-home me-3"></i> Texas, TX 10012, US</p>
+                                  <p>
+                                      <i class="fas fa-envelope me-3"></i>
+                                      Farmer@hotmail.com
+                                  </p>
+                                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                                  <p><i class="fas fa-mobile me-3"></i> 928-309-7750 </p>
+                              </div>
+                              <!-- Grid column -->
+                          </div>
+                          <!-- Grid row -->
+                      </div>
+                  </section>
+      
+                  <!-- Copyright -->
+                  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                      <i class="fas fa-copyright"></i> 2021 Copyright:
+                      <a class="text-reset fw-bold" href="https://alanomari.github.io/?#!">Farmermanbills.com</a>
+                  </div>
+      
+              </footer>
+      </div>
+          
+      
+         
+      
+          <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      
+
+
+</body>
+
+</html>
