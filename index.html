@@ -16,6 +16,7 @@
 
 
     <style>
+        /*CSS för sidan*/
         .wrapper {
             display: flex;
             flex-flow: row wrap;
@@ -26,11 +27,11 @@
                 padding: 10px;
                 flex: 1 100%;
             }
-
+        /*CSS för headern*/
         .navbar-custom {
             background-color: #8abe5b;
         }
-
+        /*CSS för menyn*/
         .sidebar__nav li.active,
         .sidebar__nav li:hover {
             background-color: #F7F2FF;
@@ -39,7 +40,7 @@
 
 
         .sidenav {
-            flex:auto;
+            flex: auto;
             z-index: 1;
             left: 0;
             background-color: #252525;
@@ -75,7 +76,7 @@
         }
 
 
-
+        /*CSS för att göra så sidan kollapsar korrekt*/
         @media all and (min-width: 800px) {
 
 
@@ -107,7 +108,7 @@
                 order: 4;
             }
         }
-
+        /*CSS för bilden i profilen*/
         #profile > img {
             position: relative;
             float: left;
@@ -117,20 +118,20 @@
             border-radius: 50%;
             padding-right: 20px;
         }
-
+        /*CSS för spectiteln (saker jag är bra på texten)*/
         #profile_specstitle {
             padding-top: 100px;
             padding-right: 5px;
             flex: auto;
             top: 300px;
         }
-
+        /*CSS för specs (saker jag är bra på texten)*/
         #profile_specs {
             flex: auto;
             top: 330px;
         }
 
-
+        /*CSS för bilderna på ägg*/
         #egg_image {
             border-radius: 10%;
         }
@@ -144,6 +145,7 @@
 
 
 <body>
+    <!--Wrapper för sidan och header-->
     <div class="wrapper">
         <nav class="navbar navbar-light navbar-custom">
             <a class="navbar-brand">
@@ -154,25 +156,22 @@
         <article class="main">
 
 
-            <!--PRICING-->
+
             <div class="container mx-auto">
-                
-                <!--PAGE CENTER TEXT-->
+                <!--INFO TEXT-->
                 <p>
                     Here at farmerman Bill's farm, we pride ourselves on only offering the very best off
                     eggs! We offer: chicken eggs, duck eggs and finally ostrich eggs. All our animals freerange on our big
                     farm here in Texas.
                 </p>
+                <!--PRIS OCH TEXT FÖR ÄGG-->
                 <div class="row">
                     <div class="col">
                         <img id="egg_image" src="http://organicacres.ca/wp-content/uploads/2019/08/Eggs-300x300.jpeg" />
 
                         <p class="font-weight-bold font-italic ">Chicken eggs:</p>
                         <p class="font-weight-light ">
-                            <del>5 pack: $1 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>5 pack: $1 &nbsp;</del><span class="font-weight-bold">SOLD OUT</span>
                         </p>
                         <p class="font-weight-light ">10 pack: $1.5</p>
                         <p class="font-weight-light ">15 pack: $2</p>
@@ -196,34 +195,20 @@
                         <img id="egg_image" src="https://s.alicdn.com/@sc04/kf/U4de4ef08edee48f4b4b122ddb60dfd99a.jpg_300x300.jpg" />
                         <p class="font-weight-bold font-italic ">Ostrich eggs:</p>
                         <p class="font-weight-light ">
-                            <del>1 egg: $5 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>1 egg: $5 &nbsp;</del><span class="font-weight-bold"> SOLD OUT </span>
+                               
                         </p>
                         <p class="font-weight-light ">
-                            <del>2 eggs: $8 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>2 eggs: $8 &nbsp;</del><span class="font-weight-bold"> SOLD OUT </span>                              
                         </p>
                         <p class="font-weight-light ">
-                            <del>3 eggs: $12 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>3 eggs: $12 &nbsp;</del><span class="font-weight-bold"> SOLD OUT </span>
                         </p>
                         <p class="font-weight-light ">
-                            <del>4 eggs: $16 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>4 eggs: $16 &nbsp;</del><span class="font-weight-bold"> SOLD OUT </span>                               
                         </p>
                         <p class="font-weight-light ">
-                            <del>5 eggs: $18 &nbsp;</del><span class="font-weight-bold">
-                                SOLD
-                                OUT
-                            </span>
+                            <del>5 eggs: $18 &nbsp;</del><span class="font-weight-bold"> SOLD OUT </span>
                         </p>
                         <p class="font-weight-bold text-danger">All Ostrich eggs are currently sold out!</p>
 
@@ -232,14 +217,14 @@
             </div>
 
         </article>
-        <!--SIDE MENU-->
+        <!--SIDO MENY-->
         <div class="sidenav">
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Clients</a>
-              
+
         </div>
-        <!--PROFILE-->
+        <!--PROFIL-->
         <aside class="aside aside-2">
 
             <div id="profile">
@@ -262,14 +247,13 @@
         <!--FOOTER-->
 
         <footer class="footer mt-auto text-center text-lg-start bg-dark text-light">
-            <!-- Section: Social media -->
+            <!-- Sektion: Sociala medier -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <!-- Left -->
+                <!-- Vänstra sidan -->
                 <div class="me-5 d-none d-lg-block">
                     <span>Get connected with us on social networks:</span>
                 </div>
-
-                <!-- Right -->
+                <!-- Högra sidan -->
                 <div>
                     <a href="https://www.facebook.com/" class="me-4 text-reset">
                         <i class="fab fa-facebook-f"></i>
@@ -293,7 +277,7 @@
 
             </section>
 
-            <!-- Section: Links  -->
+            <!-- Seckton: Länkar  -->
             <section class="">
                 <div class="container text-center text-md-start mt-5">
                     <!-- Grid row -->
@@ -311,7 +295,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
+                            <!-- Länkar -->
                             <h6 class="text-uppercase fw-bold mb-4">
                                 Products
                             </h6>
@@ -329,7 +313,7 @@
 
 
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
+                            <!-- Länkar -->
                             <h6 class="text-uppercase fw-bold mb-4">
                                 Contact
                             </h6>
@@ -347,7 +331,7 @@
                 </div>
             </section>
 
-            <!-- Copyright -->
+            <!-- Copyright text -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
                 <i class="fas fa-copyright"></i> 2021 Copyright:
                 <a class="text-reset fw-bold" href="https://alanomari.github.io/?#!">Farmermanbills.com</a>
